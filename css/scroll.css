@@ -1,0 +1,9 @@
+.scroll-tg[data-scroll="fade-left"]{transition: opacity, transform;transition-duration: 0.5s;transition-timing-function: ease-in-out;transform: translateX(-120px) !important;opacity: 0 !important;}
+.scroll-tg[data-scroll="fade-right"]{transition: opacity, transform;transition-duration: 0.5s;transition-timing-function: ease-in-out;transform: translateX(120px) !important;opacity: 0 !important;}
+.scroll-tg[data-scroll="fade-top"]{transition: opacity, transform;transition-duration: 0.5s;transition-timing-function: ease-in-out;transform: translateY(-120px) !important;opacity: 0 !important;}
+.scroll-tg[data-scroll="fade-bottom"]{transition: opacity, transform;transition-duration: 0.5s;transition-timing-function: ease-in-out;transform: translateY(120px) !important;opacity: 0 !important;}
+
+.scroll-tg.scroll-active[data-scroll="fade-left"], 
+.scroll-tg.scroll-active[data-scroll="fade-right"]{opacity: 1 !important;transform: translateX(0) !important;}
+.scroll-tg.scroll-active[data-scroll="fade-top"], 
+.scroll-tg.scroll-active[data-scroll="fade-bottom"]{opacity: 1 !important;transform: translateY(0) !important;}

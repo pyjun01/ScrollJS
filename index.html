@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Scroll</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/scroll.css">
+	<script src="js/scroll.js"></script>
+	<style>
+		*{margin: 0;padding: 0;box-sizing: border-box;}
+		#app{padding-bottom: 300px;overflow: hidden;}
+		.box{max-width: 870px;margin: 0 auto;}
+
+		#app .title{padding: 100px 0;background: #fafafa;box-shadow: 0px 5px 10px 1px #eee;text-align: center;}
+		#app .title h1{font-size: 38px;line-height: 42px;}
+		#app .title p{padding-top: 10px;font-size: 24px;line-height: 28px;}
+
+		#app .item{position: relative;margin-top: 300px;font-size: 14px;font-family: sans-serif;}
+		#app .item:after{content: '';display: block;clear: both;}
+		#app .item .box>div{display: grid;grid-template-columns: 0fr 1fr;grid-gap: 25px;width: 100%;}
+		#app .item:nth-child(2n) img{order: 2;}
+		#app .item:nth-child(2n) .box>div{grid-template-columns: 1fr 0.5fr;}
+		#app .item img{display: block;max-height: 250px; max-width: 300px;margin: 0 auto;}
+		.right{float: right;}
+		.left{float: left;}
+		.tag{word-break: keep-all;letter-spacing: -0.3px;font-size: 14px;line-height: 18px;}
+		.tag:before{content: "<";}
+		.tag:after{content: ">";}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<div class="title">
+			<div class="box">
+				<h1>ScrollJS</h1>
+				<p>Scroll Animation</p>
+			</div>
+		</div>
+		<div class="item item1">
+			<div class="box">
+				<div class="left">
+					<img src="https://file.namu.moe/file/c2790d5985eae82cd1199a4cba2101c1fb14ab4b5ee8ef924064fb67683564f4deb9239d37703ab96dd0ec7c8f81f74ce699c79c5013c781409acfece47f8ce5" class="scroll-tg" data-scroll="fade-left" data-parent=".item1" alt="img" data-duration="1">
+					<div class="scroll-tg code" data-scroll="fade-left" data-parent=".item1" data-delay="0.5" data-duration="1">
+						<span class="tag">img class="scroll-tg" data-scroll="fade-left" data-duration="1"</span><br>
+						<span class="tag">div class="scroll-tg" data-scroll="fade-left" data-duration="1" data-delay="0.5"</span><span class="tag">/div</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item item2">
+			<div class="box">
+				<div class="right">
+					<img src="https://mblogthumb-phinf.pstatic.net/MjAxNzA0MTZfMiAg/MDAxNDkyMzQ2Nzg1NTgz.qy_7nEZlgr-KeKnrY2pFSfThbxBl-ZNGDFNAmrtxdcwg.96vxapnj98Y7H1XdOkpn84eFDuJ5JchBwDG6p1X3OdUg.JPEG.redorange880/Screenshot_2017-03-20-22-49-12.png?type=w2" class="scroll-tg" data-scroll="fade-right" data-parent=".item2" alt="img" data-delay="0.1">
+					<div class="scroll-tg code" data-scroll="fade-right" data-parent=".item2">
+						<span class="tag">img class="scroll-tg" data-scroll="fade-right" data-delay="0.1"</span><br>
+						<span class="tag">div class="scroll-tg" data-scroll="fade-right"</span><span class="tag">/div</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item item3">
+			<div class="box">
+				<div class="left">
+					<img src="http://postfiles14.naver.net/20130207_61/k_homer_k_1360164644903d1cix_JPEG/tumblr_mdi07pw0OU1rkocsqo1_5001.jpg?type=w1" class="scroll-tg" data-scroll="fade-top" data-parent=".item3" alt="img" data-delay="0.1">
+					<div class="scroll-tg code" data-scroll="fade-top" data-parent=".item3">
+						<span class="tag">img class="scroll-tg" data-scroll="fade-top" data-delay="0.1"</span><br>
+						<span class="tag">div class="scroll-tg" data-scroll="fade-top"</span><span class="tag">/div</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item item4">
+			<div class="box">
+				<div class="right">
+					<img src="https://lh6.googleusercontent.com/proxy/K0uqfl9qqJkA5ASq4kSlkv9KMakLJ4KFhYVNVomt8lvZrnfG8SaRGz5Hbr3Op9G4oYLgHHiGskxCcxC1wOcE47tTUhIauDGibUqIoyos8V72=w3840-h2160-p-k-no-nd-mv" alt="img" class="scroll-tg" data-scroll="fade-bottom" data-parent=".item4" data-delay="0.1">
+					<div class="scroll-tg code" data-scroll="fade-bottom" data-parent=".item4">
+						<span class="tag">img class="scroll-tg" data-scroll="fade-bottom" data-delay="0.1"</span><br>
+						<span class="tag">div class="scroll-tg" data-scroll="fade-bottom"</span><span class="tag">/div</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
